@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(amarillo.jpg);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color:aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#magicButton {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color:#333;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#magicButton:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display:none;
+}
+
+#content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+#flowers {
+    margin-top: 20px;
+}
+
+.flower-container {
+    font-size: 3em;
+    color: gold;
+    animation: bounce 0.8s infinite alternate;
+}
+
+.flower {
+    margin: 0 5px;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
